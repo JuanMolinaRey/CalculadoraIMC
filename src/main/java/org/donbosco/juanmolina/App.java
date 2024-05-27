@@ -3,9 +3,12 @@ package org.donbosco.juanmolina;
 import java.util.Scanner;
 
 public class App {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
 
-     String intro = "Calcula tu Índice de Masa Corporal (IMC).";
+     String intro = "Bienvenidos a la Calculadora de tu Índice de Masa Corporal (IMC).";
 
      System.out.println(intro);
 
@@ -19,8 +22,8 @@ public class App {
 
      while (!input.hasNextInt()){
 
-     System.out.print("El valor es incorrecto, ingreseló de nuevo: ");
-    
+     System.out.println("El valor es incorrecto, ingreseló de nuevo: ");
+     
      input.next();
 
      }
@@ -31,7 +34,7 @@ public class App {
 
      while (!input.hasNextInt()){
 
-     System.out.print("El valor es incorrecto, ingreseló de nuevo: ");
+     System.out.println("El valor es incorrecto, ingreseló de nuevo: ");
     
      input.next();
 
@@ -39,5 +42,9 @@ public class App {
 
     weight = input.nextInt();
 
+
+     input.close();
+
+     
     }
 }
