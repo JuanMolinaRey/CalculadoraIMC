@@ -1,17 +1,43 @@
 package org.donbosco.juanmolina;
 
-/**
- * Hello world!
- */
-public final class App {
-    private App() {
-    }
+import java.util.Scanner;
 
-    /**
-     * Says hello to the world.
-     * @param args The arguments of the program.
-     */
+public class App {
     public static void main(String[] args) {
-     System.out.println("Hello Woooooorld!");
+
+     String intro = "Calcula tu Índice de Masa Corporal (IMC).";
+
+     System.out.println(intro);
+
+     Scanner input = new Scanner(System.in);
+
+     int height = 0;
+     int weight = 0;
+     
+
+     System.out.print("¿Cuanto mides? [En centrímetros]: ");
+
+     while (!input.hasNextInt()){
+
+     System.out.print("El valor es incorrecto, ingreseló de nuevo: ");
+    
+     input.next();
+
+     }
+
+     height = input.nextInt();
+
+     System.out.print("¿Cuanto pesas? [En kilos]: ");
+
+     while (!input.hasNextInt()){
+
+     System.out.print("El valor es incorrecto, ingreseló de nuevo: ");
+    
+     input.next();
+
+     }
+
+    weight = input.nextInt();
+
     }
 }
