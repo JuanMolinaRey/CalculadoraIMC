@@ -1,1 +1,2 @@
 # Calculadora de IMC
+## Hice una variable de texto con String para añadí un título al ejercicio, a continuación también puse dos variables de números útilizando el float para permitir decimales, luego añadí dos preguntas para obtener la altura y el peso, las cuales complete con loops e inputs, también utilice otro float para calcular el IMC con una formula matemática para asi obtener un número el cual utilizaremos en las condicionales para obtener el resultado de nuestro peso.
